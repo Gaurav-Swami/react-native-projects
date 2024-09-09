@@ -52,12 +52,26 @@ const styles = StyleSheet.create({
   cardImage: {
     height: 180,
     marginBottom: 8,
-    borderTopLeftRadius: 8, 
-    borderTopRightRadius: 8
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
   },
-  cardBody: {},
-  cardTitle: {},
-  cardLabel: {},
-  cardDescription: {},
-  cardFooter: {},
+  cardBody: {
+    flex: 1,
+    flexGrow: 1,
+    paddingHorizontal: 12,
+  },
+  cardTitle: {
+    color: 'black',
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 4,
+  },
+  cardLabel: {color: 'black', fontSize: 14, marginBottom: 6},
+  cardDescription: {
+    fontSize: 12,
+    marginBottom: 12,
+    marginTop: 6,
+    color: '#242B2E',
+  },
+  cardFooter: {color: 'black'},
 });
