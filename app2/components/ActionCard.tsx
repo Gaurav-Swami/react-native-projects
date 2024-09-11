@@ -24,7 +24,7 @@ export default function ActionCard() {
         </View>
         <Image
           source={{
-            uri: 'https://steve555.hashnode.dev/how-tohttps://cdn.hashnode.com/res/hashnode/image/upload/v1725847167274/74552f0c-3b07-487f-92d9-c63e94ab749a.jpeg?auto=compress,format&format=webp-scale-graphrag-with-neo4j-for-efficient-document-querying  ',
+            uri: 'https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 ',
           }}
           style={styles.cardImage}
         />
@@ -43,13 +43,15 @@ export default function ActionCard() {
                 'https://steve555.hashnode.dev/how-to-scale-graphrag-with-neo4j-for-efficient-document-querying',
               );
             }}>
-            <Text>Read More</Text>
+            <Text style={styles.socialLinks}>Read More</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              openWebsite('https://www.linkedin.com/in/gaurav-swami-b2005627a/');
+              openWebsite(
+                'https://www.linkedin.com/in/gaurav-swami-b2005627a/',
+              );
             }}>
-            <Text>Follow Me</Text>
+            <Text style={styles.socialLinks}>Follow Me</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -58,14 +60,60 @@ export default function ActionCard() {
 }
 
 const styles = StyleSheet.create({
-  headingText: {},
-  card: {},
-  elevatedCard: {},
-  headingContainer: {},
-  headerText: {},
-  cardImage: {
-    height: 100,
+  headingText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
   },
-  bodyContainer: {},
-  footerContainer: {},
+  card: {
+    width: 360,
+    height: 360,
+    marginVertical: 12,
+    marginHorizontal: 16,
+
+    borderRadius: 8,
+  },
+  elevatedCard: {
+    backgroundColor: 'black',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: '#333',
+    shadowOpacity: 0.4,
+  },
+  headingContainer: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+
+  cardImage: {
+    height: 190,
+  },
+  bodyContainer: {
+    padding: 10,
+  },
+  footerContainer: {
+    padding: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  socialLinks: {
+    fontSize: 16,
+    color: 'black',
+    fontWeight: 'bold',
+    backgroundColor: '#2c9ad1',
+    paddingHorizontal: 20,
+    paddingVertical: 8,
+    borderRadius: 8,
+  },
 });
